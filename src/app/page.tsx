@@ -15,11 +15,11 @@ export default function Home() {
           <button className="bg-blue-500 h-12 w-32 rounded-md">Learn More</button>
           <button className="bg-white text-black h-12 w-32 rounded-md">Contact</button>
         </div>
-        <div className="p-2 grayscale justify-center">
+        <div className="p-2 grayscale flex justify-center">
           <Image src={"/brands.png"} alt="logos" width={1000} height={20}/>
         </div>
       </div>
-      <div className="w-[50%]">
+      <div className="w-[50%] flex justify-center">
         <Image src={"/hero.gif"} alt="" width={600} height={60}/>
       </div>
     </div>
