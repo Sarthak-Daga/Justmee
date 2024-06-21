@@ -16,9 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="{inter.className} bg-[#0c0c23]">
         <NavBar/>
-        <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] text-white">
+        <div className="bg-[#0c0c23] text-white h-full w-full">
         {children}  
         </div>
       </body>
