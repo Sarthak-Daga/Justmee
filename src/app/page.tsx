@@ -11,16 +11,16 @@ export default function Home() {
           sed voluptatum nostrum iste beatae aliquid voluptatibus. Ab obcaecati
           ea asperiores ullam voluptates dicta commodi est officia aut ut.
         </div>
-        <div className="flex space-x-10 mt-12 items-center">
+        <div className="flex space-x-3 mt-12 justify-center">
           <button className="bg-blue-500 h-12 w-32 rounded-md">Learn More</button>
           <button className="bg-white text-black h-12 w-32 rounded-md">Contact</button>
         </div>
-        <div>
-          <Image src={"/brands.png"} alt="logos" width={600} height={20} />
+        <div className="p-2 grayscale justify-center">
+          <Image src={"/brands.png"} alt="logos" width={1000} height={20}/>
         </div>
       </div>
       <div className="w-[50%]">
-        <Image src={"/hero.gif"} alt="" width={600} height={20}/>
+        <Image src={"/hero.gif"} alt="" width={600} height={60}/>
       </div>
     </div>
     </>
