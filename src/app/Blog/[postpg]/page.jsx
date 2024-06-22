@@ -12,8 +12,6 @@ const getData = async(postpg)=> {
   return res.json()
 }
 
-
-
 const Post = async({params}) => {
 
   const {postpg} = params;

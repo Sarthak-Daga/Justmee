@@ -4,8 +4,8 @@ import Link from "next/link";
 const Postcard = ({post}) => {
   return (
     <>
-      <div className="h-[400px] w-[250px] rounded-lg flex flex-col gap-[15px] text-white">
-        <div className="flex gap-0">
+      <div className="h-[400px] w-[250px] rounded-lg flex flex-col gap-[15px] text-white mb-[200px] ml-[100px]">
+        <div className="flex">
           <div className="h-[280px] w-[220px] rounded-lg">
             <Image
               src="/hello.png"
