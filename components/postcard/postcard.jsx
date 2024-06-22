@@ -24,7 +24,7 @@ const Postcard = () => {
         <div>
           <h1 className="font-bold text-2xl ">Title</h1>
           <p className="text-white opacity-70">Description</p>
-          <Link href={"/Blog/post.jsx"}>
+          <Link href={"/Blog/post"}>
             <span className="underline">Read More</span>
           </Link>
         </div>
