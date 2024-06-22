@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-const Postcard = () => {
+const Postcard = ({post}) => {
   return (
     <>
       <div className="h-[400px] w-[250px] rounded-lg flex flex-col gap-[15px] text-white">
@@ -22,9 +22,9 @@ const Postcard = () => {
           </span>
         </div>
         <div>
-          <h1 className="font-bold text-2xl ">Title</h1>
-          <p className="text-white opacity-70">Description</p>
-          <Link href={"/Blog/post"}>
+          <h1 className="font-bold text-2xl ">{post.title}</h1>
+          <p className="text-white opacity-70">{post.body}</p>
+          <Link href={`/Blog/${post.id}`}>
             <span className="underline">Read More</span>
           </Link>
         </div>
