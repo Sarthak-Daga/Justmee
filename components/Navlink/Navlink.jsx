@@ -17,7 +17,7 @@ const Navlink = ({ navlink }) => {
                 pathname === link
                   ? 'text-black bg-white p-2 rounded-lg'
                   : 'text-white hover:text-black hover:bg-white'
-              } hover:rounded-xl hover:p-2 py-2`}
+              } hover:rounded-lg hover:p-2 py-2`}
             >
               {name}
             </div>
