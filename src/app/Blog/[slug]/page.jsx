@@ -2,11 +2,13 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Postuser from "@/../components/postuser/postuser"
+
+
 const getData = async(postpg)=> {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${postpg}`)
 
   if(!res.ok){
-    throw new error("Something went Wrong")
+    throw new Error("Something went Wrong")
   }
 
   return res.json()

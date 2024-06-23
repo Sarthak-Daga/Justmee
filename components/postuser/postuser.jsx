@@ -1,19 +1,20 @@
 import React from 'react'
+import { getPosts, getUser } from '../../lib/data'
 
-const getData = async(userID)=> {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/users/${userID}`)
+// const getData = async(userID)=> {
+//   const res = await fetch(`https://jsonplaceholder.typicode.com/users/${userID}`)
 
-  // if(!res.ok){
-  //   throw new error("Something went Wrong")
-  // }
+//   // if(!res.ok){
+//   //   throw new error("Something went Wrong")
+//   // }
 
-  return res.json()
-}
+//   return res.json()
+// }
 
 
 const Postuser = async({userID}) => {
 
-  const user = await getData(userID)
+  const user = await getUser(userID);
 
   return (
     <>
