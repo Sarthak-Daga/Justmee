@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import Postuser from "@/../components/postuser/postuser"
 const getData = async(postpg)=> {
   const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${postpg}`)
 
@@ -29,8 +29,8 @@ const Post = async({params}) => {
             <div>
               <Image src={"/noavatar.png"} height={50} width={50} className='rounded-full'/>
             </div>
-            <div className='font-semibold'>Author<br/><span className='font-bold text-lg'>Sarthak Daga</span></div>
-            <div className='font-semibold'>Published<br/><span className='font-bold text-lg'>21.11.2024</span></div>
+            {/* ----------------------------------------------------------------------------- */}
+            <Postuser userID={post.userId}/>
           </div>
           <div className='mr-[50px] mt-[40px]'>
           {post.body}  

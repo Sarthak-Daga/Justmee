@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 export default function Home() {
   return (
     <>
@@ -12,8 +12,8 @@ export default function Home() {
           ea asperiores ullam voluptates dicta commodi est officia aut ut.
         </div>
         <div className="flex space-x-3 mt-12 justify-center">
-          <button className="bg-blue-500 h-12 w-32 rounded-md">Learn More</button>
-          <button className="bg-white text-black h-12 w-32 rounded-md">Contact</button>
+          <Link href={"/About"}><button className="bg-blue-500 h-12 w-32 rounded-md">Learn More</button></Link>
+          <Link href={"/Contact"}><button className="bg-white text-black h-12 w-32 rounded-md">Contact</button></Link>
         </div>
         <div className="p-2 grayscale flex justify-center">
           <Image src={"/brands.png"} alt="logos" width={1000} height={20}/>
